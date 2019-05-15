@@ -56,5 +56,10 @@ public class Serpiente extends Animal implements Actions_Animals {
         return longitud;
     }
 
+    @Override
+    public String toString() {
+        return " Animal: " + getEspecie() + " Comida: " + getComida() +" Color: " + getColor() +" sexo: " + getSexo() + " Venenosa: " + isVenenosa
+                + " Tipo de Caza: " + tipoCaza;
+    }
     
 }

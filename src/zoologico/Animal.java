@@ -50,9 +50,4 @@ public class Animal {
         return sexo;
     }
     
-    @Override
-    public String toString() {
-        return " Animal: " + especie + " Comida: " + comida +" Color: " + color +" sexo: " + sexo;
-    }
-    
 }

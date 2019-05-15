@@ -36,4 +36,8 @@ public class Vaca extends Animal implements Actions_Animals{
         return cadena;
     }
 
+    @Override
+    public String toString() {
+        return " Animal: " + getEspecie() + " Comida: " + getComida() +" Color: " + getColor() +" sexo: " + getSexo() + " Peso: " + peso + " lbs";
+    }
 }
