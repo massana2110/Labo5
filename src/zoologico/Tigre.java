@@ -21,9 +21,10 @@ public class Tigre extends Animal implements Actions_Animals{
     
     @Override
     public void dormir(){
+        System.out.println("El tigre ");
         super.dormir();
-        
     }
+    
     @Override
     public String tipoRuido() {
         String ruido = "Roarrrr";

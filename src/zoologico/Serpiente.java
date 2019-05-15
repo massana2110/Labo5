@@ -26,6 +26,11 @@ public class Serpiente extends Animal implements Actions_Animals {
         this.longitud = longitud;
     }
     
+    @Override
+    public void dormir(){
+        System.out.println("La serpiente");
+        super.dormir();
+    }
     
     @Override
     public String tipoRuido() {

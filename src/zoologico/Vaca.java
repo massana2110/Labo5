@@ -19,7 +19,11 @@ public class Vaca extends Animal implements Actions_Animals{
         this.peso = peso;
     }
 
-    
+    @Override
+    public void dormir(){
+        System.out.println("La vaca");
+        super.dormir();
+    }
     @Override
     public String tipoRuido() {
         String ruido = "Muuuuuu";
@@ -31,7 +35,5 @@ public class Vaca extends Animal implements Actions_Animals{
         String cadena = "Duermen entremetiendo las patas en suelo...";
         return cadena;
     }
-    
-    
 
 }

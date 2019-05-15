@@ -31,7 +31,7 @@ public class Animal {
     public void comer(String especie, String comida){
         this.comida = comida;
         this.especie = especie;
-        System.out.println(especie + "esta comiendo " + comida);
+        System.out.println(especie + " esta comiendo " + comida);
     }
 
     public String getEspecie() {

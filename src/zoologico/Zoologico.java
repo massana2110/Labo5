@@ -34,7 +34,7 @@ public class Zoologico {
         for (int i = 0; i < animales.size(); i++) {
             System.out.println(animales.get(i).getEspecie());
         }
-        int opc;
+        int opc, opc3;
         do{
             System.out.println("\n¿QUE DESEA HACER?");
             System.out.println("1. VER MAS DATOS DE LAS ESPECIE.");
@@ -58,17 +58,51 @@ public class Zoologico {
                     switch(opc2){
                         case 0:
                             System.out.println("¿QUE ACCION DESEA QUE REALIZE?");
-                            System.out.println("1. Hablar");
+                            System.out.println("1. Comer");
                             System.out.println("2. Dormir");
                             System.out.println("\nSu eleccion: ");
-                            int opc3 = key.nextInt();
+                            opc3 = key.nextInt();
                             if (opc3 == 1) {
-                                
+                                animales.get(0).comer(animales.get(0).getEspecie(), animales.get(0).getComida());
                             }
+                            else if(opc3 == 2){
+                                animales.get(0).dormir();
+                            }
+                        break;
+                        case 1:
+                            System.out.println("¿QUE ACCION DESEA QUE REALIZE?");
+                            System.out.println("1. Comer");
+                            System.out.println("2. Dormir");
+                            System.out.println("\nSu eleccion: ");
+                            opc3 = key.nextInt();
+                            if (opc3 == 1) {
+                                animales.get(1).comer(animales.get(1).getEspecie(), animales.get(1).getComida());
+                            }
+                            else if(opc3 == 2){
+                                animales.get(1).dormir();
+                            }
+                            break;
+                        case 2:
+                            System.out.println("¿QUE ACCION DESEA QUE REALIZE?");
+                            System.out.println("1. Comer");
+                            System.out.println("2. Dormir");
+                            System.out.println("\nSu eleccion: ");
+                            opc3 = key.nextInt();
+                            if (opc3 == 1) {
+                                animales.get(2).comer(animales.get(2).getEspecie(), animales.get(2).getComida());
+                            }
+                            else if(opc3 == 2){
+                                animales.get(2).dormir();
+                            }
+                            break;
                     }
                     break;
                 case 3:
-                    
+                    System.out.println("SALIENDO...");
+                    break;
+                default:
+                    System.out.println("ELIJA OPCION CORRECTA.");
+                    break;
             }
         }while(opc != 3);
     }
